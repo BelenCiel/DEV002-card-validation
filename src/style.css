@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color de pagina y letra */
+body {
+    text-align: center;
+    font-family: sans-serif;
+    color: #f3f3f3;
+    background-image:url(../src/fondo.jpg);
+    background-size: auto;
+}
+
+@font-face {
+    font-family: pretendo;
+    src: url(../src/Fuente-letras/Pretendo.ttf)
+}
+
+.tittle  {
+    font-family: pretendo;
+}
+
+.contenedor1 {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f3f3f3;
+    position: fixed;
+    top: 90px;
+    bottom: 90px;
+    left: 100px;
+    right: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 0, 0);
+    align-items: center;
+
+}
+
+.logo-champi img {
+    float: left;
+    max-height: 50px;
+    max-width: 50px;
+}
+.logo-champi2 img {
+    float: right;
+    max-width: 50px;
+    max-height: 50px;
+}
+/* estilo del contenedor de la tarjeta */
+.contenedor2{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f3f3f3;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 0, 0);
+    align-items: center;
+}
+
+.imagen-estrella img{
+    
+    max-width: 150px;
+    max-height: 150px ;
+}
