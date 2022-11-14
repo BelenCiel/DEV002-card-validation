@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de credito Valida</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="mini-contenedor2">
+    <img src="img/Visa-Logo-Transparent.png" alt="">
+</div>
+  <div class="imagen-fondo2">
+    <img src="img/fondo.jpg" alt="" class="src">
+    <div class="contenedor2">
+        <div class="imagen-estrella">
+          <img src="img/estrella.png" alt="" class="src">
+        </div>
+        <br>
+        <br>
+        <div class="nombre-usuario">
+          <p id="nombreInsertado"></p>
+        </div>
+        <br>
+        <div class="texto">
+          <h5>Acabas de validar tu número de tarjeta</h5>
+          <div class="numTarjeta">
+            <p id="numeroInsertado"></p>
+          </div>
+        </div>
+          <br>
+          <h5>Te enviamos los detalles del convenio a tu correo<h5>
+          </div>
+          <div class="gif-mario">
+            <img src="img/mario-gir.webp" alt="">
+          </div>
+  </div>
+<script type="module" src="index.js"></script> 
+<script>
+  let capturaDeNombre = localStorage.getItem("llave");
+       document.querySelector("#nombreInsertado").innerHTML = capturaDeNombre;
+  let capturaDeNumero = localStorage.getItem("llave2");
+      document.querySelector("#numeroInsertado").innerHTML = capturaDeNumero;
+
+</script>
+</body>
+</html>

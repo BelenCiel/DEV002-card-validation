@@ -3,25 +3,45 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-/* color de pagina y letra */
+/*-------------uso de div para darle estilo css------------*/
+/* fondo de pagina y posicion de imagen, letra y color */
 body {
     text-align: center;
-    font-family: sans-serif;
+    position: relative;
+    font-family: monospace;
     color: #f3f3f3;
-    background-image:url(../src/fondo.jpg);
+    background-image:url(../img/fondo.jpg);
     background-size: auto;
 }
 
 @font-face {
     font-family: pretendo;
-    src: url(../src/Fuente-letras/Pretendo.ttf)
+    src: url(../Fuente-letras/Pretendo.ttf)
 }
-
+@font-face {
+    font-family: mario;
+    src: url(../Fuente-letras/Mario.ttf);
+}
+/* titulo de mi contenedor en primera pantalla*/
 .tittle  {
+    font-family: mario;
+}
+/*texto que contiene 'nintendo'*/
+.tittle2 { 
     font-family: pretendo;
 }
 
+/* propiedades de la imagen de visa, que va al extremo izq de mi pagina*/
+.mini-contenedor img {
+    position: fixed;
+    left: 10px;
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 50px;
+    
+}
+
+/*propiedades de el contenedor de mi formulario*/
 .contenedor1 {
     text-align: center;
     width: 100%;
@@ -32,8 +52,8 @@ body {
     border-width: 5px;
     border-color: #f3f3f3;
     position: fixed;
-    top: 90px;
-    bottom: 90px;
+    top: 60px;
+    bottom: 60px;
     left: 100px;
     right: 100px;
     margin: auto;
@@ -43,7 +63,7 @@ body {
     align-items: center;
 
 }
-
+/*logos dque van dentro de mi primer contenedor*/
 .logo-champi img {
     float: left;
     max-height: 50px;
@@ -54,7 +74,21 @@ body {
     max-width: 50px;
     max-height: 50px;
 }
-/* estilo del contenedor de la tarjeta */
+
+
+/* ----------------SEGUNDA PANTALLA-------------------- */
+
+
+/* propiedades de la imagen de visa, a la izq de mi segunda pantalla */
+.mini-contenedor2 img {
+    position: fixed;
+    left: 10px;
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 50px; 
+}
+
+
 .contenedor2{
     width: 100%;
     max-width: 500px;
@@ -64,8 +98,8 @@ body {
     border-width: 5px;
     border-color: #f3f3f3;
     position: fixed;
-    top: 100px;
-    bottom: 100px;
+    top: 60px;
+    bottom: 60px;
     left: 100px;
     right: 100px;
     margin: auto;
@@ -75,8 +109,31 @@ body {
     align-items: center;
 }
 
+/* propiedades de la estrella dentro del contenedor*/
 .imagen-estrella img{
     
+    max-width: 100px;
+    max-height: 100px ;
+}
+
+/* propiedades del nombre del usuario (dato guardado de mi formulario)*/
+.nombre-usuario {
+    font-family: mario;
+    font-size: 35px;
+    color: white;
+}
+
+.texto {
+    font-family: monospace;
+    font-size: 20px ;
+
+}
+
+.gif-mario {
+    position: fixed;
+    bottom: 20%;
+    right: 25px;
+    margin-top: 20px;
     max-width: 150px;
-    max-height: 150px ;
+    max-height: 50px;
 }
