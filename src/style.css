@@ -29,6 +29,10 @@ body {
 /*texto que contiene 'nintendo'*/
 .tittle2 { 
     font-family: pretendo;
+    font-size: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    
 }
 
 /* propiedades de la imagen de visa, que va al extremo izq de mi pagina*/
@@ -41,7 +45,7 @@ body {
     
 }
 
-/*propiedades de el contenedor de mi formulario*/
+/*propiedades del contenedor de mi formulario*/
 .contenedor1 {
     text-align: center;
     width: 100%;
@@ -63,7 +67,7 @@ body {
     align-items: center;
 
 }
-/*logos dque van dentro de mi primer contenedor*/
+/*logos que van dentro de mi primer contenedor*/
 .logo-champi img {
     float: left;
     max-height: 50px;
@@ -117,18 +121,20 @@ body {
 }
 
 /* propiedades del nombre del usuario (dato guardado de mi formulario)*/
-.nombre-usuario {
-    font-family: mario;
-    font-size: 35px;
-    color: white;
-}
+
 
 .texto {
     font-family: monospace;
-    font-size: 20px ;
-
+    font-size: 17px ;
 }
 
+.tips {
+    color: black;
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 5px;
+    border-style: solid;
+}
 .gif-mario {
     position: fixed;
     bottom: 20%;

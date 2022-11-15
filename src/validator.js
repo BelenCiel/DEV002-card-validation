@@ -4,7 +4,7 @@ const validator = {
 
   let reverseCard= creditCardNumber.split("").reverse(); // array de numeros invertidos
 
-  console.log(reverseCard)
+  // // console.log(reverseCard)
   let n = 1; // me indica las posiciones pares 
   let result = 0; 
   for(let i = 0 ; i < reverseCard.length ; i ++){ // bucle para recorrer el array
@@ -27,7 +27,7 @@ const validator = {
     }
     result = result + reverseCard[i]; // result almacena el resultado de la suma de los numeros de la tarjeta
   }
-   console.log(result%10===0)
+  // //  console.log(result%10===0)
 
    if (result % 10 === 0) {
     return true;
@@ -38,15 +38,8 @@ const validator = {
 
   
   maskify: (creditCardNumber) => {
-    
-    let lastNumbers = creditCardNumber.lenght; //tomo la longitod
-    let maskNumbers = "";
-    
-    for(let i = 0; i<lastNumbers-4; i++){ //le indico que desde el indice 0, hasta -4
-      maskNumbers += "#"; //debe reemplazar los digitos por '#'
-    }
-    return maskNumbers + creditCardNumber.substring(lastNumbers-4, lastNumbers)
-  
+    //le indico que desde la posición 0 a -4 debe reemplazarlas por #
+    return creditCardNumber.slice(0,-4).replace(/./g,"#") + creditCardNumber.slice(-4)
   }
 }
   export default validator;

@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de credito Valida</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de crédito Valida</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="mini-contenedor2">
     <img src="img/Visa-Logo-Transparent.png" alt="">
-</div>
+  </div>
   <div class="imagen-fondo2">
     <img src="img/fondo.jpg" alt="" class="src">
     <div class="contenedor2">
-        <div class="imagen-estrella">
-          <img src="img/estrella.png" alt="" class="src">
+      <div class="imagen-estrella">
+        <img src="img/estrella.png" alt="" class="src">
+      </div>
+      <br>
+      <br>
+      <div class="texto">
+        <p> Estimado/a
+        <p id="nombreInsertado"></p>
+        </p>
+      </div>
+      <br>
+      <div class="texto">
+        <p>Acabas de solicitar la activación del convenio a tu número de tarjeta:</p>
+        <div class="numTarjeta">
+          <p id="numeroInsertado"></p>
         </div>
-        <br>
-        <br>
-        <div class="nombre-usuario">
-          <p id="nombreInsertado"></p>
-        </div>
-        <br>
-        <div class="texto">
-          <h5>Acabas de validar tu número de tarjeta</h5>
-          <div class="numTarjeta">
-            <p id="numeroInsertado"></p>
-          </div>
-        </div>
+      </div>
+      <br>
+      <h4>Te enviaremos los detalles del convenio y pasos a seguir a tu correo.</h4>
           <br>
-          <h5>Te enviamos los detalles del convenio a tu correo<h5>
+          <div class="tips">
+            <h4> Tips para evitar estafas</h4>
+            <br>
+            <h5> • Nunca te llamaremos para pedir tus claves bancarias o coordenadas, ni las pediremos por e-mail ni por
+              SMS.</h5>
+            <h5> • Nunca incluiremos links en nuestros correos electrónicos ni en nuestros SMS.</h5>
+            <h5> • Nunca descargues archivos adjuntos de remitentes desconocidos.</h5>
           </div>
-          <div class="gif-mario">
-            <img src="img/mario-gir.webp" alt="">
-          </div>
+    </div>
+    <div class="gif-mario">
+      <img src="img/mario-gir.webp" alt="">
+    </div>
   </div>
-<script type="module" src="index.js"></script> 
-<script>
-  let capturaDeNombre = localStorage.getItem("llave");
-       document.querySelector("#nombreInsertado").innerHTML = capturaDeNombre;
-  let capturaDeNumero = localStorage.getItem("llave2");
-      document.querySelector("#numeroInsertado").innerHTML = capturaDeNumero;
+  <script type="module" src="index.js"></script>
+  <script>
+    let capturaDeNombre = localStorage.getItem("llave");
+    document.querySelector("#nombreInsertado").innerHTML = capturaDeNombre;
+    let capturaDeNumero = localStorage.getItem("llave2");
+    document.querySelector("#numeroInsertado").innerHTML = capturaDeNumero;
 
-</script>
+  </script>
 </body>
+
 </html>
