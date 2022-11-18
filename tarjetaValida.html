@@ -35,15 +35,15 @@
       </div>
       <br>
       <h4>Te enviaremos los detalles del convenio y pasos a seguir a tu correo.</h4>
-          <br>
-          <div class="tips">
-            <h4> Tips para evitar estafas</h4>
-            <br>
-            <h5> • Nunca te llamaremos para pedir tus claves bancarias o coordenadas, ni las pediremos por e-mail ni por
-              SMS.</h5>
-            <h5> • Nunca incluiremos links en nuestros correos electrónicos ni en nuestros SMS.</h5>
-            <h5> • Nunca descargues archivos adjuntos de remitentes desconocidos.</h5>
-          </div>
+      <br>
+      <div class="tips">
+        <h4> Tips para evitar estafas</h4>
+        <br>
+        <h5> • Nunca te llamaremos para pedir tus claves bancarias o coordenadas, ni las pediremos por e-mail ni por
+          SMS.</h5>
+        <h5> • Nunca incluiremos links en nuestros correos electrónicos ni en nuestros SMS.</h5>
+        <h5> • Nunca descargues archivos adjuntos de remitentes desconocidos.</h5>
+      </div>
     </div>
     <div class="gif-mario">
       <img src="img/mario-gir.webp" alt="">
@@ -51,7 +51,9 @@
   </div>
   <script type="module" src="index.js"></script>
   <script>
+    //declaro la variable que contiene el elemento al que accedi y guarde
     let capturaDeNombre = localStorage.getItem("llave");
+    //innerHTML para mostrar el nombre en mi segunda pantalla
     document.querySelector("#nombreInsertado").innerHTML = capturaDeNombre;
     let capturaDeNumero = localStorage.getItem("llave2");
     document.querySelector("#numeroInsertado").innerHTML = capturaDeNumero;

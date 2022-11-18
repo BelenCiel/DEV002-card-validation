@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*-------------uso de div para darle estilo css------------*/
 /* fondo de pagina y posicion de imagen, letra y color */
 body {
@@ -10,7 +11,7 @@ body {
     position: relative;
     font-family: monospace;
     color: #f3f3f3;
-    background-image:url(../img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: auto;
 }
 
@@ -18,21 +19,24 @@ body {
     font-family: pretendo;
     src: url(../Fuente-letras/Pretendo.ttf)
 }
+
 @font-face {
     font-family: mario;
     src: url(../Fuente-letras/Mario.ttf);
 }
+
 /* titulo de mi contenedor en primera pantalla*/
-.tittle  {
+.tittle {
     font-family: mario;
 }
+
 /*texto que contiene 'nintendo'*/
-.tittle2 { 
+.tittle2 {
     font-family: pretendo;
     font-size: 10px;
     border-radius: 15px;
     border-style: solid;
-    
+
 }
 
 /* propiedades de la imagen de visa, que va al extremo izq de mi pagina*/
@@ -42,7 +46,7 @@ body {
     margin-top: 20px;
     max-width: 150px;
     max-height: 50px;
-    
+
 }
 
 /*propiedades del contenedor de mi formulario*/
@@ -67,12 +71,14 @@ body {
     align-items: center;
 
 }
+
 /*logos que van dentro de mi primer contenedor*/
 .logo-champi img {
     float: left;
     max-height: 50px;
     max-width: 50px;
 }
+
 .logo-champi2 img {
     float: right;
     max-width: 50px;
@@ -89,11 +95,11 @@ body {
     left: 10px;
     margin-top: 20px;
     max-width: 150px;
-    max-height: 50px; 
+    max-height: 50px;
 }
 
 
-.contenedor2{
+.contenedor2 {
     width: 100%;
     max-width: 500px;
     padding: 30px 30px;
@@ -114,10 +120,10 @@ body {
 }
 
 /* propiedades de la estrella dentro del contenedor*/
-.imagen-estrella img{
-    
+.imagen-estrella img {
+
     max-width: 100px;
-    max-height: 100px ;
+    max-height: 100px;
 }
 
 /* propiedades del nombre del usuario (dato guardado de mi formulario)*/
@@ -125,7 +131,7 @@ body {
 
 .texto {
     font-family: monospace;
-    font-size: 17px ;
+    font-size: 17px;
 }
 
 .tips {
@@ -135,6 +141,7 @@ body {
     border-radius: 5px;
     border-style: solid;
 }
+
 .gif-mario {
     position: fixed;
     bottom: 20%;
